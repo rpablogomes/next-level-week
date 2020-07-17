@@ -1,0 +1,49 @@
+@media (max-widht: 900px){  
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+    align-items: center;
+    text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+
+        left: 0;
+        transform:translateX(-50%)
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #page-create-point .field group{
+        flex-direction: column;
+    }
+
+    #page-created-point .field-group .fiel + .field{
+        margin-left: 0;
+    }
+}
+
+
+
+@media (max-widht: 1440px){
+        #page-home {
+            background-position-x: 40vw;
+        }
+    
+
+    @media(max-height: 760px){
+        #page-home {
+            background-position-y: 200px;
+        }
+    }
+}
