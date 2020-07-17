@@ -15,7 +15,7 @@
 
 {% block content %}
 
-    {% include "partials/page-header.html" %}
+{% include "partials/page-header.html" %}
 
     <form action="/savepoint" method="POST">
 
@@ -52,10 +52,10 @@
             <div class="field-group">
                 <div class="field">
                     <label for="state" id="sta" name="state" value="">Estado</label>
-                    <select id="uf" name="uf" required="required" value="" >
+                    <select id="uf" name="uf" required="required" value="">
                         <option id="states" name="states" value="" onchange=Submit(this.value)>Selecione o Estado</option>
                     </select>
-            </div>
+                </div>
 
                 <div class="field">
                     <label for="city">cidade</label>
@@ -111,10 +111,10 @@
         <button type="submit">Cadastrar ponto de coleta</button>
 
     </form>
-   
+
 {% endblock content %}
 
- {% block modal %}
+{% block modal %}
     {% if saved %}
         {% include "partials/point-created.html" %}
     {% endif %}
